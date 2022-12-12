@@ -1,0 +1,35 @@
+animals table
+-id_animal  PK
+-name  VC(50)
+-age  INT
+-medical history  VC(300)
+-backstory   VC(300)
+-time at shelter DATE
+-breed(s)   VC(50)
+
+middel table animal_species
+-id_animal_species  PK  
+-id_animal FK (id_animal)
+-id_species FK (id_species)
+
+species table
+-id_species   PK
+-species  VC(50)
+-care instructions   VC(300)
+
+middel table animals_adopton
+-id_animals_adoption    PC
+--id_animal   FK (id_animal)
+-id_adoption   PK (id_adoption)
+
+adopters table
+-id_adoption   PK
+-adopter application VC(100)
+-adopter name VC(50)
+-adopter address VC(50)
+-adopter card info VC(50)
+-adopter donation INT
+-date adopted DATE
+
+
+
